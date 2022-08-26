@@ -1,0 +1,218 @@
+ .hero {
+
+         margin-left: auto;
+         margin-right: auto;
+        
+        padding-top: 118px;
+        padding-bottom: 118px;
+        text-align: center;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-hero.jpg);
+        background-color: #C4C4C4;
+        background-size: cover;
+
+        @media screen and (min-width: 1200px){
+            max-width: 1600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+         
+    }
+.main-title {
+
+
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        max-width: 360px;
+                                        /* text-align: center;  */
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px){
+            font-size: 44px;
+            line-height: 1.36;
+            width: 696px;
+            
+            
+        }
+
+}
+.modal-btn {
+        padding-top: 10px;
+        padding-right: 32px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+
+        font-family: var(--primary-font);
+        font-weight: var(--secondary-font-weigh);
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        transition: background-color var(--transition-dur-and-func);
+
+        color: #FFFFFF;
+        background-color: var(--accent-color);
+        border: 1px solid transparent;
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+                font-family: var(--primary-font);
+                font-weight: var(--secondary-font-weigh);
+                font-size: 16px;
+                line-height: 1.88;
+                letter-spacing: 0.06em;
+
+                color: #FFFFFF;
+
+                border: 1px solid transparent;
+                border-radius: 4px;
+                background-color: #188CE8;
+            }
+
+
+    }
+
+
+// @media screen and (max-width: 767px) {
+//     .hero {
+                    
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                     padding-top: 118px;
+//                     padding-bottom: 118px;
+//                     text-align: center;
+//                     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-hero.jpg);
+//                     background-color: #C4C4C4;
+//                     background-size: cover;
+//             }
+//     .main-title {
+                
+                
+//                     font-weight: 900;
+//                     font-size: 26;
+//                     line-height: 1.62;
+                
+//                                     /* text-align: center;  */
+//                     letter-spacing: 0.06em;
+//                     text-transform: uppercase;
+                
+//                     color: #FFFFFF;
+//                     width: 360px;
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                     margin-bottom: 30px;
+                
+//             }
+
+//             .modal-btn {
+//                     padding-top: 10px;
+//                     padding-right: 32px;
+//                     padding-bottom: 10px;
+//                     padding-left: 32px;
+            
+//                     font-family: var(--primary-font);
+//                     font-weight: var(--secondary-font-weigh);
+//                     font-size: 16px;
+//                     line-height: 1.88;
+//                     letter-spacing: 0.06em;
+//                     transition: background-color var(--transition-dur-and-func);
+            
+//                     color: #FFFFFF;
+//                     background-color: var(--accent-color);
+//                     border: 1px solid transparent;
+//                     border-radius: 4px;
+            
+//                     &:hover,
+//                     &:focus {
+//                             font-family: var(--primary-font);
+//                             font-weight: var(--secondary-font-weigh);
+//                             font-size: 16px;
+//                             line-height: 1.88;
+//                             letter-spacing: 0.06em;
+            
+//                             color: #FFFFFF;
+            
+//                             border: 1px solid transparent;
+//                             border-radius: 4px;
+//                             background-color: #188CE8;
+//                         }
+            
+            
+//                 }
+    
+// }
+
+// .hero {
+//     max-width: 1600px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     text-align: center;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-hero.jpg);
+//     background-color: #C4C4C4;
+//     background-size: cover;
+// }
+
+// .main-title {
+
+
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+
+//     /* text-align: center;  */
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+
+//     color: #FFFFFF;
+//     width: 696px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-bottom: 30px;
+
+// }
+
+// .modal-btn {
+//     padding-top: 10px;
+//     padding-right: 32px;
+//     padding-bottom: 10px;
+//     padding-left: 32px;
+
+//     font-family: var(--primary-font);
+//     font-weight: var(--secondary-font-weigh);
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+//     transition: background-color var(--transition-dur-and-func);
+
+//     color: #FFFFFF;
+//     background-color: var(--accent-color);
+//     border: 1px solid transparent;
+//     border-radius: 4px;
+
+//     &:hover,
+//     &:focus {
+//             font-family: var(--primary-font);
+//             font-weight: var(--secondary-font-weigh);
+//             font-size: 16px;
+//             line-height: 1.88;
+//             letter-spacing: 0.06em;
+    
+//             color: #FFFFFF;
+    
+//             border: 1px solid transparent;
+//             border-radius: 4px;
+//             background-color: #188CE8;
+//         }
+
+
+// }
+
