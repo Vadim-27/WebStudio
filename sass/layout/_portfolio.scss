@@ -1,13 +1,32 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 280px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+    
 }
 
 .filter {
     display: flex;
     gap: 8px;
-    justify-content: center;
+    
     flex-wrap: wrap;
+    @media screen and (min-width: 280px) {
+            margin-bottom: 40px;
+        }
+
+    @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
 
     margin-bottom: 50px;
 
@@ -19,6 +38,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+.adaptive {
+    max-width: 100%;
 }
 
 .portfolio-example-card {

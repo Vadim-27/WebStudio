@@ -9,7 +9,10 @@
 }
 
 .icon-advantages-box {
-        width: 450px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 450px;
         height: 120px;
         margin-bottom: 30px;
         background-position: center;
@@ -25,11 +28,13 @@
     }
 
 .icon-advantages {
+       
 
-        margin-top: 25px;
-        margin-right: 190px;
-        margin-bottom: 25px;
-        margin-left: 190px;
+
+        // margin-top: 25px;
+        // margin-right: 190px;
+        // margin-bottom: 25px;
+        // margin-left: 190px;
         background-position: center;
         @media screen and (min-width: 768px) {
         
@@ -87,6 +92,12 @@
 
 .menu-advantages {
     width: 100%;
+    @media screen and (max-width: 767px){
+        &:not( :last-child) {
+                margin-bottom: 30px;
+            }
+    }
+
     @media screen and (min-width: 768px){
     width: calc((100% - 30px)/2);
     }

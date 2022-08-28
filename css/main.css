@@ -376,10 +376,16 @@ body {
   }
   .mobile-menu__container {
     position: relative;
+    height: 100%;
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
     max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mobile-menu__box {
     display: flex;
     flex-direction: column;
   }
@@ -387,7 +393,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 302px;
   }
   .mobile-menu__link {
     font-family: var(--primary-font);
@@ -465,6 +470,10 @@ body {
     display: none;
   }
 }
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
@@ -499,7 +508,6 @@ body {
   .page-header {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #ECECEC;
     /* outline: 2px solid #ECECEC */
   }
 }
@@ -646,7 +654,6 @@ body {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-  max-width: 360px;
   /* text-align: center;  */
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -654,6 +661,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .main-title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-title {
@@ -704,7 +716,10 @@ body {
 }
 
 .icon-advantages-box {
-  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-position: center;
@@ -723,10 +738,6 @@ body {
 }
 
 .icon-advantages {
-  margin-top: 25px;
-  margin-right: 190px;
-  margin-bottom: 25px;
-  margin-left: 190px;
   background-position: center;
 }
 @media screen and (min-width: 768px) {
@@ -779,6 +790,11 @@ body {
 .menu-advantages {
   width: 100%;
   /* width: 270px; */
+}
+@media screen and (max-width: 767px) {
+  .menu-advantages:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-advantages {
@@ -870,8 +886,14 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .adaptive {
+    max-width: 100%;
+  }
+}
+
 .employees-list {
-  width: 100%;
+  max-width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1287,23 +1309,50 @@ body {
   height: 24px;
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 280px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter {
   display: flex;
   gap: 8px;
-  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 280px) {
+  .filter {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-example {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.adaptive {
+  max-width: 100%;
 }
 
 .portfolio-example-card {
